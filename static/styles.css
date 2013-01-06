@@ -46,6 +46,12 @@ html
     white-space: nowrap;
 }
 
+.item.selected
+{
+    background-color: #336;
+    color: white;
+}
+
 #player
 {
     display: inline-block;

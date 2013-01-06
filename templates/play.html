@@ -12,7 +12,7 @@
 <p>{{ metadata.description }}</p>
 <ul id="episode_list">
 {% for item in items %}
-    <li class="item" onclick="audio('{{ item.find('enclosure').attrib['url'] }}')">
+    <li class="item" onclick="audio(this, '{{ item.find('enclosure').attrib['url'] }}')">
         <span class="item_title">{{ item.find('title').text }}</span>
         <span class="item_date">{{ item.find('pubDate').text }}</span>
         <span class="item_url">{{ item.find('enclosure').attrib['url'] }}</span>
